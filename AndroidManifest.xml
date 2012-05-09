@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.adview"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+
+        <activity android:name=".Invoker"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    	<!--  AdView SDK for AdChina  -->
+	<activity 	android:name="com.adchina.android.ads.views.AdBrowserView" />
+		
+	<!-- AdView SDK for AdMob -->
+	<activity android:name="com.google.ads.AdActivity"
+       	android:configChanges="orientation|keyboard|keyboardHidden"/>
+	<!--  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/> -->
+	
+	<!-- AdView SDK for AdWo -->  
+	<activity android:name="com.adwo.adsdk.AdwoAdBrowserActivity" /> 
+
+        <!-- AdView SDK for AirAd -->       
+	<activity android:name="com.mt.airad.MultiAD"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		android:configChanges="orientation|keyboard|keyboardHidden"/>
+
+        <!-- AdView SDK for AppMedia -->       
+	<activity android:name="cn.appmedia.ad.AdActivity"></activity>
+		
+	<!-- AdView SDK for Baidu --> 
+	<activity android:name="com.baidu.AppActivity" 
+		android:configChanges="keyboard|keyboardHidden|orientation" />
+		<!-- get APP ID from http://munion.baidu.com/ -->  
+		<meta-data android:name="BaiduMobAd_APP_ID" android:value="69f2193a" />    
+		<!-- get APP SEC from http://munion.baidu.com/ --> 
+		<meta-data android:name="BaiduMobAd_APP_SEC" android:value="69f2193a_13b50d6f" />
+
+	<!-- AdView SDK for Domob --> 
+	<activity android:name="cn.domob.android.ads.DomobActivity"
+		android:theme =  "@android:style/Theme.Translucent" />
+
+	<!-- AdView SDK for LmMob --> 
+	<activity android:name="com.lmmob.ad.sdk.LmMobAdWebView"
+		android:configChanges="keyboardHidden|orientation" />
+	<activity android:name="com.lmmob.ad.sdk.LmMobFullImageActivity"
+		android:configChanges="keyboardHidden|orientation" />
+			
+	<!-- AdView SDK for Lsense -->
+	<activity android:name="com.l.adlib_android.AdBrowseActivity" 
+		android:windowSoftInputMode="stateHidden|adjustResize" 
+		android:configChanges="keyboard|keyboardHidden|orientation" />
+   			
+    <!-- AdView SDK for millennialmedia -->
+    <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" 
+    		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		android:configChanges="orientation|keyboard|keyboardHidden" />
+    	<activity android:name="com.millennialmedia.android.VideoPlayer"  
+    		android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+		android:configChanges="keyboardHidden|orientation|keyboard" />
+
+	<!-- AdView SDK for Mobisage -->
+        <activity android:name="com.mobisage.android.MobiSageActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden"></activity>
+        <service android:name="com.mobisage.android.MobiSageApkService"
+                 android:enabled="true"></service>
+		
+    <!-- AdView SDK for Suizong -->
+	<activity android:name="com.suizong.mobplate.ads.AdActivity"
+		android:configChanges="keyboard|keyboardHidden|orientation" />
+	
+    <!-- AdView SDK for tencent MobinWin -->
+	<activity android:name="com.tencent.mobwin.MobinWINBrowserActivity" />
+	
+	<!-- AdView SDK for Umeng -->
+	<activity android:name="com.umengAd.android.UmengAdDetailActivity"
+		android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.Translucent" />
+    		
+	<!-- AdView SDK for Vpon -->
+	<activity android:name="com.vpon.adon.android.WebInApp" android:screenOrientation="portrait"
+    		android:configChanges="orientation|keyboardHidden|navigation|keyboard"/>
+
+	<!-- AdView SDK for WinAd --> 
+	<activity android:name="com.winad.android.ads.VideoPlayerActivity" />
+	<receiver android:name="com.winad.android.ads.ReciveInstallPackage" ><!-- support CPA -->    
+		<intent-filter >                
+			<action android:name="android.intent.action.PACKAGE_ADDED" />
+			<data android:scheme="package" />
+		</intent-filter>
+	</receiver>
+
+    	<!-- AdView SDK for Wooboo -->
+    	<meta-data android:value="1" android:name="Market_ID"/>
+	<activity android:name="com.wooboo.adlib_android.AdActivity" 
+		android:configChanges="orientation|keyboardHidden" 
+		android:launchMode="singleTask" /> 
+    	<activity android:name="com.wooboo.adlib_android.FullActivity" 
+		android:configChanges="orientation|keyboardHidden" 
+		android:launchMode="singleTask" />
+	
+    	<!-- AdView SDK for Youmi --> 
+    	<activity android:name="net.youmi.android.AdActivity"
+		android:configChanges="keyboard|keyboardHidden|orientation"/>
+				  
+	<!-- AdView SDK for InMobi -->	
+	<activity android:name="com.inmobi.androidsdk.IMBrowserActivity"
+	android:configChanges="keyboardHidden|orientation|keyboard" />
+	
+	<!-- AdView SDK for greystripe --> 
+	<provider android:name="com.greystripe.android.sdk.AdContentProvider"
+		android:authorities="com.adview.AdContentProvider"
+		android:multiprocess="true" android:exported="false" />
+	<activity android:name="com.greystripe.android.sdk.AdView"
+		android:configChanges="keyboard|keyboardHidden|orientation">
+		<intent-filter>
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+	</activity>
+	<!--   AdView SDK for Aduu -->
+	<activity  android:name="cn.aduu.adsdk.AdSpotActivity" />    
+
+	<!--   Channel id for app markets -->
+	<meta-data android:name="AdView_CHANNEL" android:value="GFAN"></meta-data>
+	<!--  supported markets are as follows:
+		EOE(优亿市场)
+		GOOGLEMARKET(谷歌电子市场)
+		APPCHINA(应用汇)
+		HIAPK(安卓市场)
+		GFAN(机锋)
+		GOAPK(安智)
+		NDUOA(N多网)
+		91Store(手机91)
+		LIQUCN(历趣)
+		WAPTW(天网)
+		ANDROIDCN(安卓中国)
+		GGDWON(G友网)
+		ANDROIDAI(安卓之家)
+		STARANDROID(安卓星空)
+		ANDROIDD(安致)
+		YINGYONGSO(应用搜)
+		IMOBILE(手机之家)
+		SOUAPP(搜应用)
+		MUMAYI(木蚂蚁)
+		MOBIOMNI(欧米)
+		PAOJIAO(泡椒网)
+		AIBALA(爱扒拉市场)
+		COOLAPK(酷安网)
+		ANFONE(安丰)
+		APKOK(乐致网) 
+	-->
+	
+    </application>
+    	    	
+	<uses-sdk android:minSdkVersion="4" />
+	
+	<!-- AdView SDK mandatory or important permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+	<!-- optional permissions -->		
+	<uses-permission android:name="android.permission.CALL_PHONE"/><!-- Casee, WqAd, InMobi, Greystripe, lsense, izp --> 
+	<!-- <uses-permission android:name="android.permission.SEND_SMS" /> --> <!-- izp --> 
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" /><!-- izp -->
+	<uses-permission android:name="android.permission.VIBRATE" /><!-- smartmad --> 
+	<uses-permission android:name="android.permission.RECORD_AUDIO" /><!-- smartmad -->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /><!-- mobwin lbs -->
+	
+</manifest> 
