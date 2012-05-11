@@ -37,7 +37,7 @@
 	<activity android:name="com.baidu.AppActivity" 
 		android:configChanges="keyboard|keyboardHidden|orientation" />
 		<!-- get APP ID from http://munion.baidu.com/ -->  
-		<meta-data android:name="BaiduMobAd_APP_ID" android:value="69f2193a" />    
+		<meta-data android:name="BaiduMobAd_APP_ID" android:value="69f2193a" />
 		<!-- get APP SEC from http://munion.baidu.com/ --> 
 		<meta-data android:name="BaiduMobAd_APP_SEC" android:value="69f2193a_13b50d6f" />
 
@@ -46,7 +46,7 @@
 		android:theme =  "@android:style/Theme.Translucent" />
 
 	<!-- AdView SDK for LmMob --> 
-	<activity android:name="com.lmmob.ad.sdk.LmMobAdWebView"
+	<activity android:name="com.lmmob.ad.sdk.LmMobAdWebView" 
 		android:configChanges="keyboardHidden|orientation" />
 	<activity android:name="com.lmmob.ad.sdk.LmMobFullImageActivity"
 		android:configChanges="keyboardHidden|orientation" />
