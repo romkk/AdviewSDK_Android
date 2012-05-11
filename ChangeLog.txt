@@ -1,0 +1,246 @@
+﻿版本特性：
+
+AdView Android sdk 1.6.8 2012-04-27
+1.更新易传媒广告平台至v2.5.1;
+2.更新Vpon广告平台至v3.2.4;
+3.在Manifest文件中，去掉了无用的权限android.permission.INSTALL_PACKAGES，默认注释掉android.permission.SEND_SMS;
+
+
+AdView Android sdk 1.6.7 2012-04-18
+1.更新渠道配置接口，在Manifest文件中<meta-data android:name="AdView_CHANNEL" android:value="***"></meta-data>;(AdViewTargeting.setChannel接口已经作废)
+2.对离线配置文件进行优化;
+3.对地域优化进行优化;
+
+AdView Android sdk 1.6.6 2012-04-01
+1.更新易传媒广告平台至v2.4.2;
+2.更新艾德思奇广告平台至v2.3.0; 要在AndroidManifest.xml文件中声明"com.mobisage.android.MobiSageActivity"和"com.mobisage.android.MobiSageApkService";
+3.更新多盟广告平台至v2.2.0;
+4.更新优友传媒(aduu)广告平台至v3.0.3, 解决了混淆的问题；
+5.更新AppMedia广告平台至v1.1.0;
+6.优化了广告的展示效果;
+
+AdView Android sdk 1.6.5 2012-03-16
+1.更新易传媒广告平台至v2.4;
+2.更新架势广告平台至v3.0;
+3.更新帷千广告平台至v2.0.2;
+4.更新Vpon广告平台至v3.2.2;
+5.增加了对优友传媒(aduu)广告平台的支持，要在AndroidManifest.xml文件中声明cn.aduu.adsdk.AdSpotActivity;
+
+AdView Android sdk 1.6.4 2012-03-08
+1.优化了一下应用互推;
+2.更新admob广告平台至v4.3.1;(AndroidManifest.xml中需要配置android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>，编译平台需要是3.2以上)
+
+AdView Android sdk 1.6.3 2012-03-06
+1.更新天幕广告平台至v3.1.0;
+2.更新力美广告平台至v2.0;
+3.更新腾讯聚赢广告平台至v1.3;(包括Tencent_MobWIN_BASIC_1.2.jar,Tencent_MobWIN_SDK_1.3.jar, libs\armeabi\liblbs.so, 为了更好的支持lbs可以加上<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>)
+4.优化了一下亿动广告的展示;
+
+AdView Android sdk 1.6.2 2012-02-17
+1.更新有米广告平台至v3.05;
+2.更新易传媒广告平台至v2.3.6;
+3.更新Greystripe广告平台至v1.6.1;
+4.更新Smaato广告平台至v2.5.4;
+5.更新亿动智道广告平台至v2.0.1;
+6.更新架势广告平台至v2.10;
+7.更新AppMedia广告平台至v1.0.5;
+8.更新百分通联广告平台至v2.1.0.0;
+9.更新帷千广告平台至v2.0.0;
+10.优化了一下广告的切换，提高了效率;
+
+AdView Android sdk 1.6.1 2012-01-12
+1.增加了对腾讯聚赢广告平台的支持；
+2.增加了对随踪广告平台的支持；
+3.更新airAD广告平台至v1.2.7，airAD的广告展示策略做了调整，需要使用新版本;
+4.Adview SDK支持的android最小版本升级到1.6;
+5.提供的sample中增加纯code方式添加广告的demo；
+
+AdView Android sdk 1.6.0 2011-12-30
+1.更新哇棒广告平台至v2.2，混淆需要proguard4.6;
+2.更新有米广告平台至v3.04;
+3.更新易传媒广告平台至v2.3.5;
+4.对广告的切换机制进行了一下优化;
+
+AdView Android sdk 1.5.9 2011-12-23
+1.更新多盟广告平台至v2.0.2;
+2.更新umeng广告的显示机制，提高了填充率;
+3.优化了本地缓存机制，更加高效的展示广告；
+4.支持本地默认缓存功能，从adview后台点击“离线配置下载”下载配置文件，保存在<assets>文件夹中就可以了，确保任何情况下都能展示广告；
+
+AdView Android sdk 1.5.8 2011-12-09
+1.更新多盟广告平台至v2.0.1;
+2.更新airAD广告平台至v1.2.6;
+3.优化了安沃和帷千的广告显示；
+
+AdView Android sdk 1.5.7 2011-12-02
+1.优化了一下广告的切换机制, 高效的展示广告;
+2.完善了客户端信息的统计；
+3.支持xml文件布局广告，具体参考sample的xmlLayout实现；
+
+AdView Android sdk 1.5.6 2011-11-25
+1.更新airAD广告平台至v1.2.5;
+2.增加了对力美(LmMob)广告平台的支持，要在AndroidManifest.xml文件中声明com.lmmob.ad.sdk.LmMobAdWebView和com.lmmob.ad.sdk.LmMobFullImageActivity；
+3.增加了对友盟(Umeng)广告平台的支持，要在AndroidManifest.xml文件中声明com.umengAd.android.UmengAdDetailActivity, 同时需要添加umeng_res对应的资源文件；
+4.增加了对飞拓无线(Fractal)广告平台的支持；
+
+AdView Android sdk 1.5.5 2011-11-18
+1.更新adwo广告平台至v2.5.1;
+2.更新赢告广告平台至v2.0，要在AndroidManifest.xml文件中声明com.winad.android.ads.ReciveInstallPackage支持CPA；
+3.修复帷千广告重叠的问题；
+4.支持区域优化功能；
+
+AdView Android sdk 1.5.4 2011-11-11
+1.wooboo广告要在AndroidManifest.xml文件中声明com.wooboo.adlib_android.AdActivity和com.wooboo.adlib_android.FullActivity;
+2.优化了一下广告的切换机制；
+
+AdView Android sdk 1.5.3 2011-11-04
+1.更新有米广告平台至v3.03;
+2.更新哇棒广告平台至v2.1；
+3.更新百分通联(Lsense)广告平台至v2.0.0.0；
+4.更新AppMedia广告平台至v1.0.4，要在AndroidManifest.xml文件中声明cn.appmedia.ad.AdActivity；
+5.更新Vpon广告平台至v3.0.2；
+6.修复GreyStripe有时广告显示不了的问题；
+7.修复互推时点击可能导致crash的问题；
+
+AdView Android sdk 1.5.2 2011-10-21
+1.优化了帮助文档"AdViewSDK_Android 安装指南.pdf"，给开发者提供了更便捷的指导;
+2.优化了广告切换的策略，更加高效的展示广告；
+3.更新了Sample的AndroidManifest.xml，方便了开发者的使用；
+
+AdView Android sdk 1.5.1 2011-10-13
+1.增加了对易赞普(izp)广告平台的支持，要在AndroidManifest.xml文件中声明<uses-permission android:name="android.permission.CALL_PHONE"/>,<uses-permission android:name="android.permission.SEND_SMS" />,<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+2.增加了对艾德斯奇(MobiSage)平台的支持，要在AndroidManifest.xml文件中声明<uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+3.更新赢告(WinAd)广告平台至v1.9.9
+
+AdView Android sdk 1.4.10 2011-09-29
+1.增加了对百分通联(Lsense)广告平台的支持，要在AndroidManifest.xml文件中声明com.l.adlib_android.AdBrowseActivity
+2.增加了对赢告广告(WinAd)平台的支持
+3.增加了对ZestADZ英文广告平台的支持
+4.增加了对Smaato英文广告平台的支持
+5.增加了对Greystripe英文广告平台的支持，要在AndroidManifest.xml文件中声明com.greystripe.android.sdk.AdContentProvider和com.greystripe.android.sdk.AdView
+6.增加了对InMobi英文广告平台的支持，要在AndroidManifest.xml文件中声明com.inmobi.androidsdk.IMBrowserActivity
+7.增加了对MdotM英文广告平台的支持
+8.更新亿动智道广告平台至v2.0.1
+9.更新AdMob广告平台至v4.1.1
+10.更新多盟广告平台至v1.3
+11.更新millennialmedia广告平台至v4.2.6
+12.更新微云广告平台至1.2.3
+13.更新有米广告平台至v3.02
+14.更新安沃广告平台至v2.3.3
+15.更新易传媒广告平台至v2.3.1
+16.修复AppMedia广告平台的问题
+17.修复百度广告平台的问题
+
+AdView Android sdk 1.4.9 2011-09-20
+1.更新airAD sdk
+2.修改AdView统计功能bug。
+
+AdView Android sdk 1.4.8 2011-09-13
+1.增加百度广告平台
+
+AdView Android sdk 1.4.7 2011-09-06
+1.修改Domob广告中间停止的bug
+2.修改Domob广告中间时间间隔的bug
+
+AdView Android sdk 1.4.6 2011-08-26
+1.增加应用统计功能
+
+AdView Android sdk 1.4.5 2011-08-21
+1.更新有米sdk,修复混淆(progurad)问题,同时修复了未成功请求广告时广告条占据广告位的bug
+2.更新多盟sdk,焦点失去后恢复不重新计算刷新时间，修复之前应用频繁失去焦点后广告不刷新的问题
+
+AdView Android sdk 1.4.4 2011-08-12
+1.更新AppMedia，安沃的sdk
+2.修改有米新版本报混淆的bug
+3.优化AppMedia接口，可以流畅的播放广告
+4.修改当应用没有包含一个广告公司的sdk,后台设置该广告发生异常的问题
+5.更新有米sdk,有米最新sdk去掉位置权限限制
+
+AdView Android sdk 1.4.3 2011-08-07
+1.更新亿动，多盟，惟千，安沃，airAD的sdk
+2.修改混淆的bug
+3.优化airAD接口，可以流畅的播放广告，不再被位置限制
+4.修改有米广告条的新宽度，适应不同的机器
+5.修改自推广告宽度，适应不同的机器
+
+AdView Android sdk 1.4.2 2011-07-29
+1.增加广告公司sdk异常时的轮询机制reset
+2.更新MillennialMedia公司sdk,同时解决该公司广告的刷机问题。
+3.广告公司播放失败时增加更高效的优化方法。
+
+AdView Android sdk 1.4.1 2011-07-25
+1.应用 互推广告条有时变窄
+2.有米报表差异
+3.混淆问题（adwo和tinmoo)
+4.帷千无广告
+
+AdView Android sdk 1.4.0 2011-07-22
+1.增加广告公司的sdk,包括帷千，Tinmoo,AppMedia
+
+AdView Android sdk 1.3.9 2011-07-13
+1.更新亿动和安沃的最新sdk
+
+AdView Android sdk 1.3.8 2011-07-09
+1.更新架势无限的sdk,支持webview,同时改善展示效果。
+2.修改微云没有信号时的请求不间断bug
+3.增加点击和显示的外部调用interface
+4.增加java doc,供开发者查询调用。
+5.设置模式接口标准化，包括如下：
+AdViewTargeting.setUpdateMode(UpdateMode.EVERYTIME); //保证每次都从服务器取配置
+AdViewTargeting.setRunMode(RunMode.TEST);         //保证所有选中的广告公司都为测试状态 
+6.增加应用的精准广告获取支持(目前支持AdMob,MillennialMedia),陆续支持国内的广告公司。 
+
+
+AdView Android sdk 1.3.7 2011-07-01
+1.增加混淆(ProGuard)配置方法
+2.提供互推的详细报表
+3.更新logo
+
+AdView Android sdk 1.3.6 2011-06-24
+1.增加四个广告公司：Vpon,AdWo,AdTouch,AirAd
+
+AdView Android sdk 1.3.5 2011-06-16
+1.更新AdViewSDK_Android安装指南。
+2.更新AdView应用互推使用指南。
+
+AdView Android sdk 1.3.4 2011-06-12
+1.解决Wooboo请求失败连续刷新的问题。
+2.解决Domob更新广告过程没有广告显示的时间间隔。
+
+AdView Android sdk 1.3.3 2011-06-09
+1.更新AdMob最新sdk,同时增加请求广告失败时的智能填充功能。
+2.更新Wiyun最新sdk,同时增加请求广告失败时的智能填充功能。
+
+
+AdView Android sdk 1.3.2 2011-05-27
+1.不再支持快友的sdk。
+2.修补SmartAd接口调用漏洞
+
+AdView Android sdk 1.3.1 2011-05-19
+1.增加多盟和亿动的SDK。
+2.更新有米和Wooboo的SDK到最新版本。
+
+AdView Android sdk 1.3.0 2011-05-10
+1.应用推广功能增加。
+
+AdView Android sdk 1.2.8 2011-04-15
+1.优化数据返回报表功能。
+
+AdView Android sdk 1.2.6 2011-03-15
+1.增加地理位置功能。
+
+AdView Android sdk 1.2.4 2011-03-13
+1.增加新的广告公司支持。
+
+AdView Android sdk 1.2.2 2011-03-10
+1.增加缓存功能，保证服务器有问题时仍然不影响播放广告。
+
+AdView Android sdk 1.2.0 2011-02-10
+1.增加调试开关，优化log。
+
+AdView Android sdk 1.1.2 2011-01-15
+1.优化广告切换策略，提高了效率。
+
+AdView Android sdk 1.0.0 2011-01-10
+1.版本初始化，内部测试，系统联调成功，正式上线！
+
