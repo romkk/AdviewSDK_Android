@@ -1,10 +1,15 @@
 ﻿版本特性：
 
+AdView Android sdk 1.6.9 2012-05-11
+1.更新Admob广告平台至v6.0.0;
+2.增加了对东信网络Momark广告平台的支持，要在AndroidManifest.xml文件中声明com.donson.momark.activity.AdActivity，需要权限android.permission.GET_TASKS；
+3.优化了vpon平台广告展示统计;
+
+
 AdView Android sdk 1.6.8 2012-04-27
 1.更新易传媒广告平台至v2.5.1;
 2.更新Vpon广告平台至v3.2.4;
 3.在Manifest文件中，去掉了无用的权限android.permission.INSTALL_PACKAGES，默认注释掉android.permission.SEND_SMS;
-
 
 AdView Android sdk 1.6.7 2012-04-18
 1.更新渠道配置接口，在Manifest文件中<meta-data android:name="AdView_CHANNEL" android:value="***"></meta-data>;(AdViewTargeting.setChannel接口已经作废)

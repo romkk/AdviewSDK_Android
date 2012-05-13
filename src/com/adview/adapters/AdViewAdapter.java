@@ -264,6 +264,13 @@ public abstract class AdViewAdapter {
 					else {
 						return unknownAdNetwork(adViewLayout, ration);
 					}
+				case AdViewUtil.NETWORK_TYPE_MOMARK:
+					if(Class.forName("com.donson.momark.view.view.AdView") != null) {
+						return getNetworkAdapter("com.adview.adapters.MomarkAdapter", adViewLayout, ration);
+					}
+					else {
+						return unknownAdNetwork(adViewLayout, ration);
+					}
 				default:
 					return unknownAdNetwork(adViewLayout, ration);
 			}

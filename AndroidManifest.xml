@@ -126,6 +126,10 @@
 	<!--   AdView SDK for Aduu -->
 	<activity  android:name="cn.aduu.adsdk.AdSpotActivity" />    
 
+	<!--   AdView SDK for Momark -->
+	<activity android:name="com.donson.momark.activity.AdActivity"
+		android:launchMode="singleTop" />
+		
 	<!--   Channel id for app markets -->
 	<meta-data android:name="AdView_CHANNEL" android:value="GFAN"></meta-data>
 	<!--  supported markets are as follows:
@@ -169,7 +173,7 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+	<uses-permission android:name="android.permission.GET_TASKS" /><!--momark --> 
 
 	<!-- optional permissions -->		
 	<uses-permission android:name="android.permission.CALL_PHONE"/><!-- Casee, WqAd, InMobi, Greystripe, lsense, izp --> 

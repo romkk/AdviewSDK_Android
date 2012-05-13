@@ -44,11 +44,11 @@ APKOK(乐致网)
 
 
 
-当前AdView更新版本:1.6.8
+当前AdView更新版本:1.6.9
 目录结构介绍：
 libs：包括AdView的SDK和各个广告公司的SDK,其中：
 	库名					广告平台				版本
-	AdViewSDK_Android.jar:			AdView的SDK				1.6.8
+	AdViewSDK_Android.jar:			AdView的SDK				1.6.9
 	adchina_android_sdk.jar:		易传媒广告公司的SDK			2.5.1
 	adlib_android.jar:			哇棒广告公司的SDK			2.2	
 	adOn-3.2.4.jar:				Vpon广告公司的SDK			3.2.4
@@ -61,7 +61,7 @@ libs：包括AdView的SDK和各个广告公司的SDK,其中：
 	AppMediaAdAndroidSdk-1.1.0.jar: 	AppMedia广告公司的sdk			1.1.0
 	casee-ad-sdk-3.0.jar:			架势无线广告公司的SDK			3.0
 	domob_android_sdk-2.0.2.jar:		多盟广告公司的SDK			2.2.0
-	GoogleAdMobAdsSdk-4.3.1.jar:		AdMOB广告公司的SDK			4.3.1	
+	GoogleAdMobAdsSdk-6.0.0.jar:		AdMOB广告公司的SDK			6.0.0	
 	gssdk_1.6.1.jar:			GreyStripe广告公司的SDK			1.6.1
 	InMobiAndroidSDK.jar			InMobi广告公司的SDK			3.0.1
 	IZPView.jar:				易赞普广告公司的SDK			1.0.3
@@ -70,7 +70,8 @@ libs：包括AdView的SDK和各个广告公司的SDK,其中：
 	mdotm-sdk-android.jar:			MdotM广告公司的SDK			3.0.0
 	MMAdView.jar:				MillennialMedia 广告公司的SDK		4.2.6
 	mobisageSDK.jar:			艾德斯奇广告公司的SDK			2.3.0
-	mobplate-android-sdk-1.02.jar		随踪广告公司的SDK			1.02
+	mobplate-android-sdk-1.02.jar:		随踪广告公司的SDK			1.02
+	momark_android_sdk2012_v1.1.0.jar:	Momark广告公司的SDK			1.1.0
 	smartmad-sdk-android.jar:		亿动智道广告公司的SDK			2.0.1
 	SOMAAndroidSDK2.5.4.jar:		SOMA广告公司的SDK			2.5.4
 
@@ -87,3 +88,18 @@ libs：包括AdView的SDK和各个广告公司的SDK,其中：
 	zestadz_sdk_androidv1.2.jar:		ZestADZ广告公司的SDK			1.2
 	
 
+
+
+
+联系AdView
+
+欢迎您用以下方式和我们沟通，
+
+Tel:   010-52911111  QQ：1263811658
+Email: threadxyz@gmail.com
+Blog： http://t.sina.com.cn/adview
+
+
+                                                                                          
+                                                                              北京快友世纪（Adview）
+                                                                              http://www.adview.cn

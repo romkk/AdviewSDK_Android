@@ -504,6 +504,7 @@ public class AdViewManager {
 			    case AdViewUtil.NETWORK_TYPE_SMAATO:
 			    case AdViewUtil.NETWORK_TYPE_UMENG:	
 			    case AdViewUtil.NETWORK_TYPE_ADUU:
+			    case AdViewUtil.NETWORK_TYPE_MOMARK:		
 			    	ration.key = jsonRation.getString("key");
 			    	ration.key2 = jsonRation.getString("key2");
 			    	break;
@@ -550,6 +551,7 @@ public class AdViewManager {
 			    case AdViewUtil.NETWORK_TYPE_MOBWIN:
 			    case AdViewUtil.NETWORK_TYPE_SUIZONG:	
 			    case AdViewUtil.NETWORK_TYPE_ADUU:
+			    case AdViewUtil.NETWORK_TYPE_MOMARK:			
 			    {
 			    	//if(ration.weight > 0)
 				{
